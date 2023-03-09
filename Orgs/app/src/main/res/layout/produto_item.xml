@@ -23,9 +23,9 @@
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintStart_toEndOf="@id/imageView"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="@tools:sample/lorem/random[0]" />
+            tools:text="@tools:sample/lorem/random" />
 
         <TextView
             android:id="@+id/produto_item_descricao"
@@ -38,7 +38,7 @@
             app:layout_constraintEnd_toEndOf="@id/produto_item_nome"
             app:layout_constraintStart_toStartOf="@id/produto_item_nome"
             app:layout_constraintTop_toBottomOf="@id/produto_item_nome"
-            tools:text="@tools:sample/lorem/random[0]" />
+            tools:text="@tools:sample/lorem/random" />
 
         <TextView
             android:id="@+id/produto_item_valor"
@@ -54,7 +54,7 @@
             app:layout_constraintEnd_toEndOf="@id/produto_item_nome"
             app:layout_constraintStart_toStartOf="@id/produto_item_nome"
             app:layout_constraintTop_toBottomOf="@id/produto_item_descricao"
-            tools:text="19.99" />
+            tools:text="R$ 19.99" />
 
         <ImageView
             android:id="@+id/imageView"
@@ -68,7 +68,6 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/produto_1"
             tools:srcCompat="@tools:sample/backgrounds/scenic" />
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </com.google.android.material.card.MaterialCardView>
