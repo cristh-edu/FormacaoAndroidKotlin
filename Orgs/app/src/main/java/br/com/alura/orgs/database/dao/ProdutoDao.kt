@@ -7,9 +7,11 @@ import br.com.alura.orgs.model.Produto
 
 @Dao
 interface ProdutoDao {
+
     @Query("SELECT * FROM Produto")
     fun buscaTodos() : List<Produto>
 
     @Insert
     fun salva(vararg produto: Produto)
+
 }
